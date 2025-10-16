@@ -5,7 +5,7 @@ from random import randint
 def get_answer():
     number = randint(1, 100)
     print(f"Question: {number}")
-    player_answer = input("Your answer: ")
+    player_answer = input("Your answer: ").lower().strip()
     correct_answer = "yes" if is_even(number) else "no"
     return player_answer, correct_answer
 
@@ -30,8 +30,9 @@ def even_game():
             counter += 1
         else:
             print(
-                f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+                f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+                f"Let's try again, {name}!"
             )
-            counter = 0
+            return
 
     print(f"Congratulations, {name}!")
