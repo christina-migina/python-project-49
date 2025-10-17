@@ -9,4 +9,6 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
-
+[![asciicast](https://asciinema.org/a/dqlc47TG45Mjvhlnt4l69RJHl.svg)](https://asciinema.org/a/dqlc47TG45Mjvhlnt4l69RJHl)
+[![asciicast](https://asciinema.org/a/ZeaNU51OhcVXJ9jmuVqdBsEDe.svg)](https://asciinema.org/a/ZeaNU51OhcVXJ9jmuVqdBsEDe)
+[![asciicast](https://asciinema.org/a/XyGhHi1nw0iLVmzlVoTQboC87.svg)](https://asciinema.org/a/XyGhHi1nw0iLVmzlVoTQboC87)
