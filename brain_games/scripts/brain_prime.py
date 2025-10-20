@@ -3,32 +3,29 @@ from random import randint
 
 
 def get_answer():
-    number1, number2 = randint(1, 100), randint(1, 100)
-    print(f"Question: {number1} {number2}")
-    player_answer = input("Your answer: ")
-    correct_answer = get_result(number1, number2)
+    number = randint(1, 100)
+    print(f"Question: {number}")
+    player_answer = input("Your answer: ").lower().strip()
+    correct_answer = "yes" if is_prime(number) else "no"
     return player_answer, correct_answer
 
 
-def get_result(number1, number2):
-    while number1 != 0 and number2 != 0:
-        if number1 > number2:
-            number1 = number1 % number2
-        else:
-            number2 = number2 % number1
-    return number1 + number2
+def is_prime(number):
+    if number <= 2:
+        return True
+    for num in range(2, number // 2 + 1):
+        if number % num == 0:
+            return False
+    return True
 
 
 def is_answer_correct(player_answer, correct_answer):
-    try:
-        return int(player_answer) == correct_answer
-    except ValueError:
-        return False
+    return player_answer == correct_answer
 
 
-def gcd_game():
+def prime_game():
     name = welcome_user()
-    print("Find the greatest common divisor of given numbers.")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     counter = 0
 
     while counter < 3:
