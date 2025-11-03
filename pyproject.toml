@@ -18,9 +18,13 @@ packages = ["brain_games/games"]
 
 [dependency-groups]
 dev = [
-    "ruff>=0.13.3",
+	"ruff>=0.13.3",
 ]
 
+[tool.uv.workspace]
+members = [ 
+	"brain_games/games", 
+]
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:even_game"
