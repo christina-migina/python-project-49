@@ -4,6 +4,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
+
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=christina-migina_python-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=christina-migina_python-project-49)
@@ -25,20 +26,23 @@
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/<your-github-username>/python-project-49.git
+git clone git@github.com:christina-migina/python-project-49.git
 cd python-project-49
 ```
+[![asciicast](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa.svg)](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa)
 
 ### 2. Install dependencies
 ```
 make install
 ```
+[![asciicast](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa.svg)](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa)
 
 ### 3. Build and install the package globally
 ```
 make build
 make package-install
 ```
+
 
 ### 4. Run the Brain Games
 ```

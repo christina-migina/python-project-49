@@ -1,5 +1,5 @@
 from brain_games.cli import welcome_user
-from random import randint
+from random import randint, choice
 from brain_games.games.brain_calc import calc_game
 
 
