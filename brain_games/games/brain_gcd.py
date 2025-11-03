@@ -1,9 +1,14 @@
 from brain_games.cli import welcome_user
 from random import randint
 
+START = 1
+END = 100
+ROUNDS_TO_WIN = 3
+
 
 def get_answer():
-    number1, number2 = randint(1, 100), randint(1, 100)
+    number1 = randint(START, END)
+    number2 = randint(START, END)
     print(f"Question: {number1} {number2}")
     player_answer = input("Your answer: ")
     correct_answer = get_result(number1, number2)
@@ -31,7 +36,7 @@ def gcd_game():
     print("Find the greatest common divisor of given numbers.")
     counter = 0
 
-    while counter < 3:
+    while counter < ROUNDS_TO_WIN:
         player_answer, correct_answer = get_answer()
 
         if is_answer_correct(player_answer, correct_answer):

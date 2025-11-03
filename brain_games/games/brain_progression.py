@@ -1,5 +1,13 @@
 from brain_games.cli import welcome_user
-from random import randint, choice
+from random import randint
+
+START_NUM = 1
+END_NUM = 100
+MIN_LENGTH = 5
+MAX_LENGTH = 10
+MIN_STEP = 1
+MAX_STEP = 10
+ROUNDS_TO_WIN = 3
 
 
 def get_answer():
@@ -10,9 +18,12 @@ def get_answer():
 
 
 def get_progression():
-    start, quantity, step = randint(1, 100), randint(5, 10), randint(1, 10)
-    progression = [str(start + i * step) for i in range(quantity)]
-    missing_num_index = randint(0, quantity - 1)
+    start = randint(START_NUM, END_NUM)
+    length = randint(MIN_LENGTH, MAX_LENGTH)
+    step = randint(MIN_STEP, MAX_STEP)
+
+    progression = [str(start + i * step) for i in range(length)]
+    missing_num_index = randint(0, length - 1)
     missing_num = progression[missing_num_index]
     progression[missing_num_index] = ".."
     return progression, missing_num
@@ -27,7 +38,7 @@ def progression_game():
     print("What number is missing in the progression?")
     counter = 0
 
-    while counter < 3:
+    while counter < ROUNDS_TO_WIN:
         player_answer, correct_answer = get_answer()
 
         if is_answer_correct(player_answer, correct_answer):
