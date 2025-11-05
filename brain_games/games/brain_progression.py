@@ -18,12 +18,12 @@ def get_answer():
 
 
 def get_progression():
-    start = randint(START_NUM, END_NUM)  #NOSONAR
-    length = randint(MIN_LENGTH, MAX_LENGTH)  #NOSONAR
-    step = randint(MIN_STEP, MAX_STEP)  #NOSONAR
+    start = randint(START_NUM, END_NUM)  # NOSONAR
+    length = randint(MIN_LENGTH, MAX_LENGTH)  # NOSONAR
+    step = randint(MIN_STEP, MAX_STEP)  # NOSONAR
 
     progression = [str(start + i * step) for i in range(length)]
-    missing_num_index = randint(0, length - 1)  #NOSONAR
+    missing_num_index = randint(0, length - 1)  # NOSONAR
     missing_num = progression[missing_num_index]
     progression[missing_num_index] = ".."
     return progression, missing_num

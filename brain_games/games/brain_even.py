@@ -7,7 +7,7 @@ ROUNDS_TO_WIN = 3
 
 
 def get_answer():
-    number = randint(START, END)  #NOSONAR
+    number = randint(START, END)  # NOSONAR
 
     print(f"Question: {number}")
     player_answer = input("Your answer: ").lower().strip()
