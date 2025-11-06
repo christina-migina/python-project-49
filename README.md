@@ -35,19 +35,20 @@ cd python-project-49
 ```
 make install
 ```
-[![asciicast](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa.svg)](https://asciinema.org/a/M0Qpi7KvqJdc5PIFhnbsyIRPa)
+[![asciicast](https://asciinema.org/a/aCap1bGwsYGs7WcGuTpqsBiCv.svg)](https://asciinema.org/a/aCap1bGwsYGs7WcGuTpqsBiCv)
 
 ### 3. Build and install the package globally
 ```
 make build
 make package-install
 ```
-
+[![asciicast](https://asciinema.org/a/8EVAQk9Qk4VQllauCfxPw0cXC.svg)](https://asciinema.org/a/8EVAQk9Qk4VQllauCfxPw0cXC)
 
 ### 4. Run the Brain Games
 ```
 brain-games
 ```
+[![asciicast](https://asciinema.org/a/IxG1ZZ9A4D6waiBjXTRocbRXj.svg)](https://asciinema.org/a/IxG1ZZ9A4D6waiBjXTRocbRXj)
 
 ### 5. Run the Even Game
 ```
