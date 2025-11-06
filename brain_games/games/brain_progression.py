@@ -46,7 +46,8 @@ def progression_game():
             counter += 1
         else:
             print(
-                f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+                f"'{player_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.\n"
                 f"Let's try again, {name}!"
             )
             return
